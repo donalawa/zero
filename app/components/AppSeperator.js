@@ -13,7 +13,8 @@ const styles = StyleSheet.create({
     line: {
         height: 1,
         width: '100%',
-        backgroundColor: colors.primary
+        backgroundColor: colors.primary,
+        marginBottom: 40
     }
 })
 

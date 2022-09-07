@@ -1,16 +1,14 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
 
 import AppButton from './app/components/AppButton';
-import Screen from './app/components/Screen';
-import LoginScreen from './app/screens/LoginScreen';
+import AuthNavigator from './app/navigation/AuthNavigator';
+import ForgotPassword from './app/screens/ForgotPassword';
 
 export default function App() {
   return (
-      <LoginScreen />
+    <NavigationContainer>
+      <AuthNavigator />
+    </NavigationContainer>
   );
 }
 
-const styles = StyleSheet.create({
-
-});
